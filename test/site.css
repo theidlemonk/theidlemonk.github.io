@@ -15,7 +15,13 @@ div{
 }
 
 #aboutme {
-	background: #009393;
+	/*background: #009393;*/
+	position:absolute;
+	background-image: url('791699.png');
+	-webkit-filter: sepia(100%);
+	filter: sepia(100%);
+	background-size: cover;
+	z-index: -1;
 }
 
 #contact {
@@ -26,8 +32,8 @@ div{
 		), url('http://www.brandeis.edu/about/images/newformat/map2.jpg');*/
 position:absolute;
 background-image: url('http://www.brandeis.edu/about/images/newformat/map2.jpg');
--webkit-filter: blur(2px) brightness(0.4);
-        filter: blur(2px) brightness(0.4);
+-webkit-filter: brightness(0.4);
+filter: brightness(0.4);
 background-size: cover;
 z-index: -1;
 
@@ -35,19 +41,27 @@ z-index: -1;
 
 #projects {
 	/*background: #FF3800;*/
-	background-image: url('http://bluewallpaper.org/backgrounds/blue_binary_code-316259.jpeg');
-	-webkit-filter: blur(1px) brightness(0.4);
-background-size: cover;
-z-index: -1;
-position:absolute
-		/*background: linear-gradient(
+			/*background: linear-gradient(
 		rgba(255, 0, 0, 0.5), 
 		rgba(255, 0, 0, 0.5)
 		), url('http://bluewallpaper.org/backgrounds/blue_binary_code-316259.jpeg');*/
+background-image: url('http://blog.generalassemb.ly/blog/wp-content/uploads/2014/07/clean-code.jpg');
+-webkit-filter: brightness(0.5);
+filter: brightness(0.5);
+background-size: cover;
+z-index: -1;
+position:absolute;
+
 }
 
 #blogs {
-	background: #00585F;
+	/*background: #00585F;*/
+	background-image: url('http://www.jennifer-dane-clements.com/wp-content/uploads/2014/10/Pen-writing-on-paper-008.jpg');
+	-webkit-filter: brightness(0.5);
+	filter: brightness(0.5);
+	background-size: cover;
+	z-index: -1;
+	position:absolute;
 }
 
 a {
@@ -60,10 +74,10 @@ a {
 	transition-property: -webkit-transform;
 	transition-property: transform;
 	-webkit-transform: translateZ(0);
-	        transform: translateZ(0);
+	transform: translateZ(0);
 }
 
 a:hover, a:focus, a:active {
 	-webkit-transform: scale(1.1);
-	        transform: scale(1.1);
+	transform: scale(1.1);
 }
