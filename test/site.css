@@ -17,7 +17,7 @@ div{
 #aboutme {
 	/*background: #009393;*/
 	position:absolute;
-	background-image: url('791699.png');
+	background-image: url('https://cloud.githubusercontent.com/assets/791699/5549689/1dcac1d2-8b5d-11e4-8402-c31ebca3e710.png');
 	-webkit-filter: sepia(100%);
 	filter: sepia(100%);
 	background-size: cover;
