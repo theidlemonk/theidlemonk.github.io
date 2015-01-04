@@ -17,7 +17,7 @@ div{
 #aboutme {
 	/*background: #009393;*/
 	position:absolute;
-	background-image: url('https://cloud.githubusercontent.com/assets/791699/5549689/1dcac1d2-8b5d-11e4-8402-c31ebca3e710.png');
+	background-image: url('../assets/me.png');
 	-webkit-filter: sepia(100%);
 	filter: sepia(100%);
 	-moz-filter: sepia(100%);
@@ -34,7 +34,7 @@ div{
 		rgba(255, 0, 0, 0.5)
 		), url('http://www.brandeis.edu/about/images/newformat/map2.jpg');*/
 position:absolute;
-background-image: url('http://www.brandeis.edu/about/images/newformat/map2.jpg');
+background-image: url('../assets/map2.jpg');
 -webkit-filter: brightness(0.5);
 filter: brightness(0.5);
 -moz-filter: brightness(0.5);
@@ -51,7 +51,7 @@ z-index: -1;
 		rgba(255, 0, 0, 0.5), 
 		rgba(255, 0, 0, 0.5)
 		), url('http://bluewallpaper.org/backgrounds/blue_binary_code-316259.jpeg');*/
-background-image: url('http://blog.generalassemb.ly/blog/wp-content/uploads/2014/07/clean-code.jpg');
+background-image: url('../assets/clean-code.jpg');
 -webkit-filter: brightness(0.5);
 filter: brightness(0.5);
 -moz-filter: brightness(0.5);
@@ -65,7 +65,7 @@ position:absolute;
 
 #blogs {
 	/*background: #00585F;*/
-	background-image: url('http://upload.wikimedia.org/wikipedia/commons/0/0e/Stipula_fountain_pen.jpg');
+	background-image: url('../assets/pen.jpg');
 	-webkit-filter: brightness(1);
 	filter: brightness(1);
 	-moz-filter: brightness(1);
