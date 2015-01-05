@@ -44,6 +44,10 @@ hr{
 	clear: both;
 }
 
+.screenshot{
+	width: 100%; 
+}
+
 #footer{
 	padding: 0px 20px;
 	height: 50px;
