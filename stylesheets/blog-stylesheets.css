@@ -92,10 +92,43 @@ a {
 
 }
 
-a:focus{
+a:focus, a:hover{
 	-webkit-transform: scale(1.1);
 	transform: scale(1.1);
 	-moz-transform: scale(1.1);
 	-o-transform: scale(1.1);
 	-ms-transform: scale(1.1);
+}
+
+.btn {
+  background: rgb(36, 36, 36);
+  opacity: 0.5;
+  -webkit-border-radius: 6;
+  -o-border-radius: 6;
+  -ms-border-radius: 6;
+  -moz-border-radius: 6;
+  border-radius: 6px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover, .btn:focus {
+  background: rgb(36, 36, 36);
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+aside {
+  /*float: left;*/
+  right: 33px;
+  bottom: 60px;
+  position: fixed;
+  /*width: 100%;*/
+}
+
+.emptyParagraph{
+	height: 30px;
 }
