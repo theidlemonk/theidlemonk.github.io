@@ -77,7 +77,7 @@ pre{
 	width: inherit;
 }
 
-a {
+a.fancy {
 	padding-left: 10px;
 	color: red;
 	text-decoration: none;
@@ -92,7 +92,7 @@ a {
 
 }
 
-a:focus, a:hover{
+a.fancy:focus, a.fancy:hover{
 	-webkit-transform: scale(1.1);
 	transform: scale(1.1);
 	-moz-transform: scale(1.1);
