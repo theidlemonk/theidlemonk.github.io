@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+  <title>Enumerable | cycle</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheets.css">
+</head>
+<body>
+  <div id="banner-container">
+    <div id="banner-text">Idle Musings</div> 
+  </div>
+  <div class="container">
+    <main>
+      <h1>Enumerable#cycle</h1>
+      <h2 class="left">Enumerable#cycle...WHAT?</h2>
+      <h4 class="right">Sunday, 18 December 2015)--</h4>
+      <hr>
+      <section>
+        <aside>
+          <a href="http://theidlemonk.github.io/blog/index.html" class="btn">Back to Blog Home</a>
+        </aside>
+        <p>
+          Before we begin to understand <em>Enumerable#cycle</em>, lets talk about <em>Enumerable</em> first. As per the <a href="http://www.oxforddictionaries.com/us/definition/american_english/enumerable?searchDictCode=all">definition</a> of the word <em>Enumerable</em> is <em>'Able to be counted by one-to-one correspondence with the set of all positive integers.'</em> Thats a Mathematics definition, what does it mean in Ruby! Well, the idea is the same. But in programming we deals with integers and strings. So in Ruby, we would define an <em>Enumerable</em> as <em>'Able to be counted by one-to-one correspondence with a set/List/Collection'</em>.
+        </p>
+        <p>
+          Lets take an example of the frequently used <em>#each</em> enumerator from ruby enumerables. The <em>Enumerable#each</em> lets us enumerate though a list of array/hash collection and performs a task that is passed in the block for each element in the collection. As this is an enumerator, it conceptually behaves the same way for any collection (array or a hash). 
+        </p>
+        <p>
+          Now that we have an idea of <em>Enumerables</em> in ruby, lets see what the <em>Enumerable#cycle</em> does. Keeping in reference to the <em>Enumerable#each</em>, this enumerator <em>#cycle</em> almost behaves the same way. Only in this case, it does not stop after it enumerates through the collection unless specified. The <em>Enumerable#cycle</em> when called on a collection, it enumerates through the collection <em>n</em> times. Here <em>n</em> is a parameter passed in when the <em>#cycle</em> enumerator is called. So when n is blank or not passed, the collection is enumerated though infinitely.
+        </p>
+        <p>
+          In simple terms we can say, <em>Enumerable#cycle</em> cycles though a collection <em>n</em> times. lets see an example.
+          <pre>
+          <code>
+&gt;&gt; my_collection = ["I", "Love", "Pizza"]
+[
+    [0] "I",
+    [1] "Love",
+    [2] "Pizza"
+]
+
+&gt;&gt; my_collection.cycle { |x| print x}
+ILovePizzaILovePizzaILovePizzaILovePizzaILovePizzaILovePizza ... &infin; ... (infinitely)
+
+&gt;&gt; my_collection.cycle(3) { |x| print x}
+ILovePizzaILovePizzaILovePizzanil
+</code>
+</pre>
+        </p>
+        <p>
+          In the example above, the first time I call cycle on my_collection without a parameter, it keeps printing till I hit the break/^C.<br>Whereas, when I pass the parameter (3) to the enumerator cycle, it prints it 3 times and quits.
+        </p>
+        <p class="emptyParagraph"><!-- Do not put any content here --></p>
+      </section>
+    </main>
+    <div id="footer">
+      <p class="left" >My <a href="https://github.com/theidlemonk">Github</a> </p>
+      <p class="right"> &copy; theidlemonk</p>
+    </div>
+  </div>
+
+</body>
+
