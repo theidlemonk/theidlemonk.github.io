@@ -132,3 +132,20 @@ aside {
 .emptyParagraph{
 	height: 30px;
 }
+
+/*pastie.org custom*/
+
+.credit{
+	visibility: hidden
+}
+
+/*.textmate-source-numbers{
+	visibility: hidden
+}*/
+
+.allcode{
+	font-size: 80%;
+	word-wrap: break-word; 
+	font-weight: bold;
+	background-color: black;
+}

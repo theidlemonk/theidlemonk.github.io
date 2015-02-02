@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<head>
+  <title>OOP</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheets.css">
+  <link rel="stylesheet" type="text/css" href="http://pastie.org/stylesheets/themes/slate.css">
+</head>
+<body>
+  <div id="banner-container">
+    <div id="banner-text">Idle Musings</div> 
+  </div>
+  <div class="container">
+    <main>
+      <h1>Classes vs Modules</h1>
+      <h2 class="left">OOP with Classes and Modules</h2>
+      <h4 class="right">Sunday, 1 February 2015</h4>
+      <hr>
+      <section>
+        <aside>
+          <a href="http://theidlemonk.github.io/blog/index.html" class="btn">Back to Blog Home</a>
+        </aside>
+        <p>
+          Object Oriented Programming (OOP) is like building your own matrix. Just like 'The Architect' in the Matrix, who created this virtual world called 'The Matrix' with code. It was a replica of the real world but was not the real world. It did behave like the real world as well. But it had its own little tricks.  
+        </p>
+        <p>
+          Lets try to understand OOP by understanding the Architects way of programming The Matrix. The way he build it, all of the people in the matrix were instances of the person class. The animals and vehicles in the matrix were instances of their own parent classes. I hope I still got your attention so far. Lets move on. So this is the concept of object-oriented programming. We define objects/classes, depicting real world objects. Now we can define a specific thing which is an instance of the object/class we created.
+        </p>
+        <p>
+          Lets take an example and look at some code to see how this works. Say we want to create our own matrix. But this one is just a little animal shed. In this Matrix shed we have 3 different types of animals; dogs, sheep and bunnies. We start with creating an animal object from which these animals with inherit or be instances of. Here is our animal class.
+          <pre>
+          <code>
+class Animal
+
+  attr_accessor :legs, :type, :color, :diet
+
+  def initialize(color)
+    @legs = 4
+    @color = color
+  end
+
+end
+          </code>
+          </pre>
+        </p>
+        <p>
+          Lets create a dog, a bunny and a sheep inheriting from <em>Animal</em>.
+          <pre>
+          <code>
+class Dog < Animal
+
+  def initialize(color)
+    super
+    @type = 'dog'
+    @diet = 'omnivore'
+  end
+
+end
+
+class Bunny < Animal
+
+  def initialize(color)
+    super
+    @type = 'bunny'
+    @diet = 'herbivore'
+  end
+
+end
+
+class Sheep < Animal
+
+  def initialize(color)
+    super
+    @type = 'sheep'
+    @diet = 'herbivore'
+  end
+
+end
+          </code>
+          </pre>          
+        </p>
+        <p>
+          When we create instances of these animals this is what we get.
+          <pre>
+          <code>
+dog = Dog.new('grey')
+p dog.legs #=> 4
+p dog.diet #=> "omnivore"
+p dog.color #=> "grey"
+p dog.type #=> "dog"
+
+bunny = Bunny.new('white')
+p bunny.legs #=> 4
+p bunny.diet #=> "herbivore"
+p bunny.color #=> "white"
+p bunny.type #=> "bunny"
+
+sheep = Sheep.new('black')
+p sheep.diet #=> "herbivore"
+p sheep.color #=> "black"
+p sheep.type #=> "sheep"                     
+          </code>
+          </pre>           
+        </p>
+        <p>
+          This is what classes are in OOP. Lets get into Modules now. Modules are more like libraries, or better described as a snippet of code that can be reused across multiple classes. A module is does not really fall into the OOP concept, but its a nice thing to have in ruby that lets you choose your design pattern. Think like a configuration item that we want a class to have if needed. Also, having it as a module, it lets us change the configuration at one place without affecting the class itself.
+        </p>
+        <p>
+          Say our Matrix animal shed is in springfield, right next to Mr. Burns nuclear plant. So because of the location and how the bunnies and sheep run around the yard and drink from the plant waste; they turn radioactive vampires. Here we can create a module for exactly that and let sheep and bunny use it.
+          <pre>
+          <code>
+module RadioActive
+
+  def mutation
+    puts 'Im radio active vampire ...Grrrr'
+  end
+
+end              
+          </code>
+          </pre>          
+        </p>
+        <p>
+          This module will be included for <em>Sheep</em> and <em>Bunny</em> classes as follow:
+          <pre>
+          <code>
+class Bunny < Animal
+
+  include RadioActive
+
+  def initialize(color)
+    super
+    @type = 'bunny'
+    @diet = 'herbivore'
+  end
+
+end
+
+class Sheep < Animal
+
+  include RadioActive
+
+  def initialize(color)
+    super
+    @type = 'sheep'
+    @diet = 'herbivore'
+  end
+
+end            
+          </code>
+          </pre>           
+        </p>
+        <p>
+        Lets see what we get when we create the instance of these two possible radioactive animals.
+        <pre>
+        <code>        
+bunny = Bunny.new('white')
+p bunny.mutation #=> Im radio active vampire ...Grrrr
+p bunny.type #=> "bunny"
+
+sheep = Sheep.new('black')
+p sheep.mutation #=> Im radio active vampire ...Grrrr
+p sheep.type #=> "sheep"        
+        </code>
+        </pre>   
+        </p>
+        <p class="emptyParagraph"><!-- Do not put any content here --></p>
+      </section>
+    </main>
+    <div id="footer">
+      <p class="left" >My <a href="https://github.com/theidlemonk">Github</a> </p>
+      <p class="right"> &copy; theidlemonk</p>
+    </div>
+  </div>
+</body>
+
