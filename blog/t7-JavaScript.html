@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<head>
+  <title>Javascript | Blog</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheets.css">
+</head>
+<body>
+  <div id="banner-container">
+    <div id="banner-text">Idle Musings</div> 
+  </div>
+  <div class="container">
+    <main>
+      <h1>Javascript Stuff...</h1>
+      <h2 class="left">Ruby Hashes vs. JavaScript Objects</h2>
+      <h4 class="right">Sunday, 8 February 2015</h4>
+      <hr>
+      <section>
+        <aside>
+          <a href="http://theidlemonk.github.io/blog/index.html" class="btn">Back to Blog Home</a>
+        </aside>
+        <p>
+          Javascript objects are almost the same as a Ruby hash. I say <em>'almost'</em> just because I have just started learning both, so maybe there are possiblities I have not yet come across. But lets see the similarities in both. 
+        </p>
+        <p>
+          Here is one of the basic ways of defining a java script object.
+          <pre>
+          <code>
+  var vehicle = new Object;     // creating a new object vehicle
+  console.log(typeof vehicle);  //--> object
+  vehicle["name"] = "Mustang";  // adding property 'name' to the object and assigning value
+  console.log(vehicle["name"]); //--> Mustang
+          </code>
+          </pre>
+          Lets look at the Ruby side of creating a new Hash.
+          <pre>
+          <code>
+  vehicle = Hash.new          # creating a new hash vehicle
+  p vehicle.is_a? Object      #--> true
+  vehicle["name"] = "Mustang" # adding a key 'name' to the hash and assigning value
+  p vehicle["name"]           #--> "Mustang"
+          </code>
+          </pre>
+        </p>
+        <p>
+         Lets look at another way of creating a javascript object. This method is probably used more often. Try to see the similarities.
+          <pre>
+          <code>
+  var vehicle = {};             // creating a new object vehicle
+  vehicle["name"] = "Mustang";  // adding property 'name' to the object and assigning value
+          </code>
+          </pre>
+          Lets look at the Ruby side of creating a new Hash in the same way.
+          <pre>
+          <code>
+  vehicle = {}                # creating a new hash vehicle
+  vehicle["name"] = "Mustang" # adding a key 'name' to the hash and assigning value
+          </code>
+          </pre> 
+          Other than the <em>var</em> in javascript, they look identical. I know; the semicolon as well. They are pretty much the same in syntax too. At this point I think its a fair assumption to say that <em>Javascript Objects are same as a Hash in Ruby</em>.       
+        </p>
+        <p>
+          Lets look at a few more syntatic comparisons between the two languages. This is getting interesting.<br>
+          Here is a way we can declare a new object in Javascript and assign a property as well. We will look at the Ruby side right after so we can compare.
+          <pre>
+          <code>
+  var vehicle = {
+    name: "Mustang",
+    make: "Ford"
+  };
+          </code>
+          </pre>
+          Lets look at the Ruby side of it now.
+          <pre>
+          <code>
+  vehicle = {
+    name: "Mustang",
+    make: "Ford"
+  }
+          </code>
+          </pre>
+          Do you see the difference. I know, interesting huh.<br> Here's is where I think the Javascript side does a little more than a Ruby hash. Defining a behavior/function in the Object. I am not sure if a ruby hash can contain a method. I will have to research on that a bit more. Also, maybe if a ruby hash can hold an object then that would do it too. Anyways lets see the part in javascript I was taking about that I think a ruby hash might not be able to do. Its not that a ruby hash is not capable, but they are totally different things compared here. 
+          <pre>
+          <code>
+  var vehicle = {};
+  vehicle.drive = function() {
+    return "Vrooom...";
+  }
+          </code>
+          </pre>                     
+        </p>
+        <p class="emptyParagraph"><!-- Do not put any content here --></p>
+      </section>
+    </main>
+    <div id="footer">
+      <p class="left" >My <a href="https://github.com/theidlemonk">Github</a> </p>
+      <p class="right"> &copy; theidlemonk</p>
+    </div>
+  </div>
+
+</body>
+
