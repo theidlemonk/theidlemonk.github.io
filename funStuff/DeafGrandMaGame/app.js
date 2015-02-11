@@ -26,7 +26,12 @@ var deafGrandmaGame = {
     },
     play: function() {
         deafGrandmaGame.user.setSpeak(document.getElementById("userSpeak").value);
-        document.getElementById("grandmaSpeaks").innerHTML = this.grandma.speaks();
+        var grandmaSpeaks = this.grandma.speaks();
+        document.getElementById("grandmaSpeaks").innerHTML = grandmaSpeaks;
+        if (grandmaSpeaks == deafGrandmaGame.grandma.saysBye){
+            alert(grandmaSpeaks);
+            close();
+        }
     },
     reset: function() {
         location.reload();
