@@ -19,16 +19,29 @@ html, body {
     font-size: 3.5em;
     color: black;
 }
+
+li {
+    list-style-type: none;
+}
+
 aside {
     position: fixed;
     right: 2%;
     width: 10%;
     float: left;
-    
     background-color: white;
     top: 11.5em;
-    /*border: 1px solid grey;*/
 }
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+aside a:hover {
+  color: #466bb2;
+}
+
 main {
     height: 100%;
     padding: 4em;
