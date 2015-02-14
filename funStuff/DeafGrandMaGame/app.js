@@ -28,7 +28,7 @@ var deafGrandmaGame = {
         deafGrandmaGame.user.setSpeak(document.getElementById("userSpeak").value);
         var grandmaSpeaks = this.grandma.speaks();
         document.getElementById("grandmaSpeaks").innerHTML = grandmaSpeaks;
-        if (grandmaSpeaks == deafGrandmaGame.grandma.saysBye){
+        if (grandmaSpeaks == deafGrandmaGame.grandm.saysBye){
             alert(grandmaSpeaks);
             close();
         }

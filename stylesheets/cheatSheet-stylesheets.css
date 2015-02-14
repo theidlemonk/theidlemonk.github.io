@@ -38,7 +38,8 @@ a {
     color: black;
 }
 
-aside a:hover {
+aside a:hover
+{
   color: #466bb2;
 }
 
