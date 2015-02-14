@@ -5,20 +5,23 @@ html, body {
 }
 .banner-container {
     text-align: center;
-    /*background-image: url("http://retroclipart.co/1024/royalty-free-retro-blue-beige-black-and-green-dots-on-white-background-by-kj-pargeter-563.jpg");*/
-    background-size: cover;
+    background-position: right;
+    background-image: url("http://i2.wp.com/wptavern.com/wp-content/uploads/2014/06/revisr-banner.png");
+    background-size: contain;
     /*background-color: transparent;*/
-    background-color: white;
-    background-attachment: fixed;
+    /*background-color: white;*/
+    /*background-attachment: fixed;*/
     display: table;
     height: 10em;
     width: 100%;
+    background-color: rgb(82, 62, 106);
+    background-repeat: no-repeat;
 }
 .banner-text {
     display: table-cell;
     vertical-align: middle;
     font-size: 3.5em;
-    color: black;
+    color: white;
 }
 
 li {
@@ -45,12 +48,16 @@ a {
 aside a:hover
 {
   color: #466bb2;
+  font-weight: bold;
 }
 
 main {
-    height: 100%;
-    padding: 4em;
+    /*height: 100%;*/
+    /*padding: 4em;*/
     width: 60%;
+    /*padding: 50px;*/
+	background-color: rgb(221, 223, 216);
+    padding: 0px 30px;
 }
 article {
     float: left;
@@ -58,7 +65,8 @@ article {
     margin: 10px 0;
     padding: 0 10px;
     background: white;
-    border: dashed;
+    border: solid;
+    color: rgb(82, 62, 106);
 }
 pre{
     font-size: 100%;
@@ -68,8 +76,12 @@ pre{
 	white-space: -o-pre-wrap;
 	word-wrap: break-word; 
 	background-color: #d3d3d3;
-	padding: 2px 0;
+	padding-top: 5px;
 	
+}
+.emptyArticle{
+	height: 30px;
+	clear: both;
 }
 #footer {
     padding: 0 20px;
