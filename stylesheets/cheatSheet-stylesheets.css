@@ -32,6 +32,9 @@ aside {
     /*float: left;*/
     background-color: white;
     top: 11.5em;
+    opacity: 0.4;
+    padding: 0 5px;
+    z-index: 10;
 }
 
 a {
@@ -56,6 +59,17 @@ article {
     padding: 0 10px;
     background: white;
     border: dashed;
+}
+pre{
+    font-size: 100%;
+	white-space: pre-wrap;   
+	white-space: -moz-pre-wrap;  
+	white-space: -pre-wrap;     
+	white-space: -o-pre-wrap;
+	word-wrap: break-word; 
+	background-color: #d3d3d3;
+	padding: 2px 0;
+	
 }
 #footer {
     padding: 0 20px;
