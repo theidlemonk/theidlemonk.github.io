@@ -5,9 +5,10 @@ html, body {
 }
 .banner-container {
     text-align: center;
-    background-image: url("http://retroclipart.co/1024/royalty-free-retro-blue-beige-black-and-green-dots-on-white-background-by-kj-pargeter-563.jpg");
+    /*background-image: url("http://retroclipart.co/1024/royalty-free-retro-blue-beige-black-and-green-dots-on-white-background-by-kj-pargeter-563.jpg");*/
     background-size: cover;
-    background-color: transparent;
+    /*background-color: transparent;*/
+    background-color: white;
     background-attachment: fixed;
     display: table;
     height: 10em;
@@ -27,8 +28,8 @@ li {
 aside {
     position: fixed;
     right: 2%;
-    width: 10%;
-    float: left;
+    width: 20%;
+    /*float: left;*/
     background-color: white;
     top: 11.5em;
 }
@@ -48,9 +49,10 @@ main {
     width: 60%;
 }
 article {
-    float: right;
-    width: 40%;
-    margin: auto;
+    float: left;
+    width: 100%;
+    margin: 10px 0;
+    padding: 0 10px;
     background: white;
     border: dashed;
 }
