@@ -81,7 +81,6 @@ a.fancy {
     -ms-transform: translateZ(0);
 }
 a.fancy:focus, a.fancy:hover {
-    text-decoration: none;
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
     -moz-transform: scale(1.1);
