@@ -95,9 +95,9 @@ h1.entry-title {
   font-size: 22px;
 }
 
-.entry-content > p:first-of-type:first-line {
-  text-transform: uppercase;
-}
+/*.entry-content > p:first-of-type:first-line {*/
+/*  text-transform: uppercase;*/
+/*}*/
 
 .entry-footer {
   margin: 90px 0;
