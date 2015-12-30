@@ -3,6 +3,13 @@ body{
 	padding-left:10%;
 	font-family: 'Montserrat', sans-serif;
 }
+
+.mdl-textfield__input {
+	border-color: rgba(249, 249, 249, 0.76);
+	border-bottom-width:1px; 
+	border-bottom-style:solid;
+	border-width: 2px;
+}
 .card-image.mdl-card {
   width: 80%;
   height: 80%;
@@ -39,8 +46,5 @@ body{
 	right: 0;
 }
 
-.mdl-textfield__input {
-	border-color: -moz-use-text-color -moz-use-text-color rgba(231, 238, 242, 0.76);
-	border-width: 2px;
-}
+
 
