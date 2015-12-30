@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <meta content="utf-8" http-equiv="encoding">
+  <title> Movie Search </title>
+  <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.cyan-pink.min.css" /> 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="site.css">
+</head>
+
+<body>
+  <!-- <div class='search'> -->
+  <div class="card-image mdl-card mdl-shadow--2dp">
+    <div class="mdl-card__actions">
+      <h1 id="banner"> Type a movie to search </h1>
+      <form>
+        <div class="mdl-grid">
+          <div class="mdl-cell mdl-cell--4-col">
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+              <input type="text"  class="mdl-textfield__input" id="movie-search" />
+              <label class="mdl-textfield__label" for="movie-search">Movie Name</label>
+            </div>
+          </div>
+          <div class="mdl-cell mdl-cell--4-col">
+            <input type="submit" value="Find" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" />
+            <button id="reset" type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
+              Reset Page
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- </div> -->
+  <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+  </table>
+  <div id="details">
+  </div>
+  <footer></footer>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>

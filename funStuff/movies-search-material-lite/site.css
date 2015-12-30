@@ -1,0 +1,46 @@
+body{
+	padding-right:10%;
+	padding-left:10%;
+	font-family: 'Montserrat', sans-serif;
+}
+.card-image.mdl-card {
+  width: 80%;
+  height: 80%;
+  margin: 5%, 10%;
+  background: url('themovies_header.jpg') center / cover;
+}
+.card-image > .mdl-card__actions {
+	padding-right:10%;
+	padding-left:10%;
+	margin-bottom: 10%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+.card-image__filename {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+#details,table {
+	width: 80%;
+}
+
+.poster-card-image.mdl-card {
+  width: 100%;
+  height: 100%;
+}
+
+.poster {
+	height: 100%;
+}
+
+.back-to-top {
+	right: 0;
+}
+
+.mdl-textfield__input {
+	border-color: -moz-use-text-color -moz-use-text-color rgba(231, 238, 242, 0.76);
+	border-width: 2px;
+}
+
