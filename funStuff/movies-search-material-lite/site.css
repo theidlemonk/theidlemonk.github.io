@@ -12,7 +12,7 @@ body{
 .card-image > .mdl-card__actions {
 	padding-right:10%;
 	padding-left:10%;
-	margin-bottom: 10%;
+	/*margin-bottom: 10%;*/
   background: rgba(0, 0, 0, 0.6);
   color: white;
 }
