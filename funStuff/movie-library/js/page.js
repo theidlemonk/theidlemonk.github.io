@@ -20,7 +20,7 @@ var Page = {
             + "</div>"
             + "<div class='row'>"
                 + "<div class='col s12 m5'>"
-                    + "<img class='z-depth-5' src='" + movie.poster + "'>"
+                    + "<img class='materialboxed z-depth-3' src='" + movie.poster + "'>"
                 + "</div>"
                 + "<div class='col s12 m7'>"
                     + "<span><div class='card-panel z-depth-3 teal text-lighten-2' > <div class='card-panel z-depth-3'>Plot: " 
