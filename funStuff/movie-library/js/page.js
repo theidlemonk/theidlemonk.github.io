@@ -15,8 +15,8 @@ var Page = {
         populateMovieDetails: function (movie) {
          var content = "<div class='row'>";
          content = content + "<div class='card-panel z-depth-3'>"
-            + "<div class='card-panel z-depth-3 orange center'>"
-                + "<h1>" + movie.name + "</h1>"
+            + "<div class='card-panel z-depth-3 orange'>"
+                + "<h1><a class='btn-floating red' href='index.html' ><i class='material-icons left'>keyboard_arrow_left</i></a> <span class='center'>" + movie.name + "</span></h1>"
             + "</div>"
             + "<div class='row'>"
                 + "<div class='col s12 m5'>"
