@@ -11,18 +11,14 @@
 <body ng-app="movieLib">
     <nav>
         <div class="nav-wrapper container">
-            <a href="index.html" class="brand-logo">Movie Library</a>
+            <a ng-href="#/" class="brand-logo">Movie Library</a>
         </div>
     </nav>
-    <!--  <div class="row">
-        <div class="card-panel z-depth-3 teal lighten-2">
-            <h1>Movie Library</h1>
-            <h6>This is for your own collection of movies and related.<div class="right-align"><a class="btn-floating btn-large waves-effect waves-light light-green"><i class="material-icons">add</i></a></div></h6>
-        </div>
-    </div> -->
-    <div id="main-content" class="container">
-    </div>
+
+    <!-- render view -->
     <div ng-view class="container"></div>
+    <!-- end view -->
+
     <div class="fixed-action-btn vertical click-to-toggle">
         <a class="btn-floating btn-large red">
             <i class="large mdi-navigation-menu"></i>
@@ -41,11 +37,9 @@
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.min.js">
     </script>
-     <!-- <script type="text/javascript" src="js/movie.js"></script>
-    // <script type="text/javascript" src="js/library.js"></script>
-    // <script type="text/javascript" src="js/page.js"></script>
-    // <script type="text/javascript" src="app.js"></script> -->
+    <script type="text/javascript" src="js/movie.js"></script>
     <script type="text/javascript" src="myapp.js"></script>
+    <script type="text/javascript" src="controller.js"></script>
     <script type="text/javascript" src="service.js"></script>
 </body>
 
