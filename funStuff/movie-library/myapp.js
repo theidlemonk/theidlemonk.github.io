@@ -19,8 +19,8 @@ var movieLib = angular.module('movieLib', ['ngRoute'])
             resolve: resolveMovies
         })
         .when('/new', {
-            controller: 'NewMovieController as editMovie',
-            templateUrl: 'detail.html'
+            controller: 'NewMovieController as newMovie',
+            templateUrl: 'templates/newform.html'
                 // resolve: resolveMovies
         })
         .otherwise({

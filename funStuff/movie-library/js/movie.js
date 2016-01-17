@@ -1,10 +1,3 @@
-// var Movie = {
-//   name: "",
-//   year: "",
-//   poster: "",
-//   imdbId: ""
-// };
-
 function Movie (name,year,poster,imdbId,plot,rated,director,actors) {
   this.name = name;
   this.year = year;
