@@ -20,8 +20,8 @@ var movieLib = angular.module('movieLib', ['ngRoute'])
         })
         .when('/new', {
             controller: 'NewMovieController as newMovie',
-            templateUrl: 'templates/newform.html'
-                // resolve: resolveMovies
+            templateUrl: 'templates/newform.html',
+                resolve: resolveMovies
         })
         .otherwise({
             redirectTo: '/'

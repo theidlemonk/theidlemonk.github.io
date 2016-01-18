@@ -12,7 +12,11 @@ movieLib.service('Movies', function() {
         self.movies.push(movie);
     }
     this.fetch = function() {
-        return self.movies;
+        return self;
     };
+    this.add = function (movie) {
+      self.movies.push(movie);
+      return self;
+    }
 
 })

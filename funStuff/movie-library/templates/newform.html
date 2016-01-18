@@ -1,37 +1,36 @@
 <form name="newMovieForm">
     <div class="input-field">
         <label for="name">Name</label>
-        <input id="name" type="text" name="name" ng-model="newMovie.name" required>
+        <input id="name" type="text" name="name" ng-model="newMovie.name" />
     </div>
     <div class="input-field">
         <label for="year">Year</label>
-        <input id="year" type="text" name="year" ng-model="newMovie.year" required>
+        <input id="year" type="text" name="year" ng-model="newMovie.year" />
     </div>
     <div class="input-field">
         <label for="poster">Poster (url) </label>
-        <input id="poster" type="text" name="poster" ng-model="newMovie.poster" required>
+        <input id="poster" type="text" name="poster" ng-model="newMovie.poster" />
     </div>
     <div class="input-field">
         <label for="imdbId">IMDBid</label>
-        <input id="imdbId" type="text" name="imdbId" ng-model="newMovie.imdbId" required>
+        <input id="imdbId" type="text" name="imdbId" ng-model="newMovie.imdbId" />
     </div>
     <div class="input-field">
         <label for="plot">Plot</label>
-        <input id="plot" type="text" name="plot" ng-model="newMovie.plot" required>
+        <input id="plot" type="text" name="plot" ng-model="newMovie.plot" />
     </div>
     <div class="input-field">
         <label for="rated">Rated</label>
-        <input id="rated" type="text" name="rated" ng-model="newMovie.rated" required>
+        <input id="rated" type="text" name="rated" ng-model="newMovie.rated" />
     </div>
     <div class="input-field">
         <label for="director">Director</label>
-        <input id="director" type="text" name="director" ng-model="newMovie.director" required>
+        <input id="director" type="text" name="director" ng-model="newMovie.director" />
     </div>
     <div class="input-field">
         <label for="actors">Actors</label>
-        <input id="actors" type="text" name="actors" ng-model="newMovie.actors" required>
+        <input id="actors" type="text" name="actors" ng-model="newMovie.actors" />
     </div>
-    
     <a href="#/" class="btn">Cancel</a>
-    <button ng-click="newMovie.save()" ng-disabled="newMovieForm.$invalid" class="waves-effect waves-light btn">Save</button>
+    <button ng-click="save()" class="waves-effect waves-light btn">Save</button>
 </form>

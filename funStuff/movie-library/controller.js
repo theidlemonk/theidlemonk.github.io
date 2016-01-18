@@ -1,18 +1,16 @@
 movieLib.controller('MovieListController', function($scope, movies) {
-    $scope.movies = movies;
+    $scope.movies = movies.movies;
 })
 
 movieLib.controller('ShowMovieController', function($scope, $routeParams, movies) {
-  console.log(movies);
-    $scope.movie = movies[$routeParams.id];
+    $scope.movie = movies.movies[$routeParams.id];
 
     // this is for full screen enlarge poster in detail view
-    $('.materialboxed').materialbox();
+    // $('.materialboxed').materialbox();
 })
 
 movieLib.controller('NewMovieController', function($scope, movies) {
-    var editProject = this;
-    $scope.movies = movies;
+    $scope.save = function() {
+        movies.add($scope.newMovie);
+    }
 })
-
-
