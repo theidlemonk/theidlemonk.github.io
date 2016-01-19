@@ -1,7 +1,12 @@
 <form name="newMovieForm">
-    <div class="input-field">
+    <div class="input-field row">
+    <span class='col m11'>
         <label for="name">Name</label>
         <input id="name" type="text" name="name" ng-model="newMovie.name" />
+        </span>
+        <span class='col m1'>
+        <button ng-disabled="newMovie.name == undefined || newMovie.name == ''" ng-click="findMovies()" class="waves-effect waves-light btn"><i class="material-icons">search</i></button>
+        </span>
     </div>
     <div class="input-field">
         <label for="year">Year</label>
@@ -31,6 +36,26 @@
         <label for="actors">Actors</label>
         <input id="actors" type="text" name="actors" ng-model="newMovie.actors" />
     </div>
+    <br>
+    <br>
     <a href="#/" class="btn">Cancel</a>
     <button ng-click="save()" class="waves-effect waves-light btn">Save</button>
+    <br>
+    <br>
+    <br>
 </form>
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <div ng-show="movies">
+            <blockquote>Do any of these look like the one you want. If so, select it by clicking it. Otherwise, continue with the form, you will!</blockquote>
+            <ul ng-repeat="movie in movies">
+                <li>{{movie.Title}} - {{movie.Year}}</li>
+            </ul>
+        </div>
+        <div ng-hide="movies">Sorry...no donut for you! Nothing found with <span class="pink-text ">{{newMovie.name}}</span></div>
+    </div>
+    <!--     <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div> -->
+</div>
