@@ -1,61 +1,69 @@
-<form name="newMovieForm">
-    <div class="input-field row">
-    <span class='col m11'>
+<h3>New Cinéma </h3>
+<div class="row">
+    <form name="newMovieForm" class='col m7'>
+        <div class="input-field row">
+            <span class='col m11'>
         <label for="name">Name</label>
         <input id="name" type="text" name="name" ng-model="newMovie.name" />
         </span>
-        <span class='col m1'>
+            <span class='col m1'>
         <button ng-disabled="newMovie.name == undefined || newMovie.name == ''" ng-click="findMovies()" class="waves-effect waves-light btn"><i class="material-icons">search</i></button>
         </span>
+        </div>
+        <div class="input-field">
+            <label for="year">Year</label>
+            <input id="year" type="text" name="year" ng-model="newMovie.year" />
+        </div>
+        <div class="input-field">
+            <label for="poster">Poster (url) </label>
+            <input id="poster" type="text" name="poster" ng-model="newMovie.poster" />
+        </div>
+        <div class="input-field row">
+            <span class='col m11'>
+            <label for="imdbId">IMDbId</label>
+            <input id="imdbId" type="text" name="imdbId" ng-model="newMovie.imdbId" />
+            </span>
+            <span class='col m1'>
+            <a ng-show="newMovie.imdbId" class="waves-effect waves-light btn yellow black-text" href="http://www.imdb.com/title/{{newMovie.imdbId}}/combined" target="_blank">IMDb</a>
+            </span>
+        </div>
+        <div class="input-field">
+            <label for="plot">Plot</label>
+            <input id="plot" type="text" name="plot" ng-model="newMovie.plot" />
+        </div>
+        <div class="input-field">
+            <label for="rated">Rated</label>
+            <input id="rated" type="text" name="rated" ng-model="newMovie.rated" />
+        </div>
+        <div class="input-field">
+            <label for="director">Director</label>
+            <input id="director" type="text" name="director" ng-model="newMovie.director" />
+        </div>
+        <div class="input-field">
+            <label for="actors">Actors</label>
+            <input id="actors" type="text" name="actors" ng-model="newMovie.actors" />
+        </div>
+        <br>
+        <br>
+        <a href="#/" class="btn">Cancel</a>
+        <button ng-click="save()" class="waves-effect waves-light btn">Save</button>
+        <br>
+        <br>
+        <br>
+    </form>
+    <div class='col s12 m5 center-align'>
+        <img ng-show="newMovie.poster" class='circle responsive-img' src='{{newMovie.poster}}' />
     </div>
-    <div class="input-field">
-        <label for="year">Year</label>
-        <input id="year" type="text" name="year" ng-model="newMovie.year" />
-    </div>
-    <div class="input-field">
-        <label for="poster">Poster (url) </label>
-        <input id="poster" type="text" name="poster" ng-model="newMovie.poster" />
-    </div>
-    <div class="input-field">
-        <label for="imdbId">IMDBid</label>
-        <input id="imdbId" type="text" name="imdbId" ng-model="newMovie.imdbId" />
-    </div>
-    <div class="input-field">
-        <label for="plot">Plot</label>
-        <input id="plot" type="text" name="plot" ng-model="newMovie.plot" />
-    </div>
-    <div class="input-field">
-        <label for="rated">Rated</label>
-        <input id="rated" type="text" name="rated" ng-model="newMovie.rated" />
-    </div>
-    <div class="input-field">
-        <label for="director">Director</label>
-        <input id="director" type="text" name="director" ng-model="newMovie.director" />
-    </div>
-    <div class="input-field">
-        <label for="actors">Actors</label>
-        <input id="actors" type="text" name="actors" ng-model="newMovie.actors" />
-    </div>
-    <br>
-    <br>
-    <a href="#/" class="btn">Cancel</a>
-    <button ng-click="save()" class="waves-effect waves-light btn">Save</button>
-    <br>
-    <br>
-    <br>
-</form>
+</div>
 <!-- Modal Structure -->
 <div id="modal1" class="modal">
     <div class="modal-content">
         <div ng-show="movies">
             <blockquote>Do any of these look like the one you want. If so, select it by clicking it. Otherwise, continue with the form, you will!</blockquote>
             <ul ng-repeat="movie in movies">
-                <li>{{movie.Title}} - {{movie.Year}}</li>
+                <li>{{movie.Title}} - {{movie.Year}} - {{movie.imdbID}}</li>
             </ul>
         </div>
         <div ng-hide="movies">Sorry...no donut for you! Nothing found with <span class="pink-text ">{{newMovie.name}}</span></div>
     </div>
-    <!--     <div class="modal-footer">
-      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-    </div> -->
 </div>

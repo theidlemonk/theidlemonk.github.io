@@ -14,9 +14,8 @@ movieLib.service('Movies', function() {
     this.fetch = function() {
         return self;
     };
-    this.add = function (movie) {
-      self.movies.push(movie);
-      return self;
+    this.add = function(movie) {
+        self.movies.push(movie);
+        return self;
     }
-
 })
