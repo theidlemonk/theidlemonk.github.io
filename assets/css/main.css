@@ -282,12 +282,18 @@
  input.form-control,
  textarea.form-control,
  .btn {
-     border-radius: 0;
+     /*border-radius: 0;*/
+    font-weight: 500;
+ }
+
+ .btn-success{
+  background-color: #1abc9c;
  }
 
  .form-group label{
   font-weight: 300;
   color: white;
+  font-size: 1em;
  }
 
  
