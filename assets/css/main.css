@@ -185,6 +185,11 @@
      padding-right: 8px;
      color: #1abc9c;
  }
+
+ #headerwrap h2 i:hover,:active {
+     padding-right: 8px;
+     color: #ffffff;
+ }
  /* Intnro Wrap */
  
  #intro {
