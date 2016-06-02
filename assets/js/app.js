@@ -2,6 +2,10 @@ $(function() {
 
     smoothScrollingInit();
     chartInit();
+    $('#form').on('submit', function(e) {
+        e.preventDefault();
+        sendMail();
+    });
 
 });
 
@@ -23,7 +27,7 @@ function smoothScrollingInit() {
 };
 
 function chartInit() {
-    $('canvas').each(function(index,canvas) {
+    $('canvas').each(function(index, canvas) {
         drawChartForCanvas(canvas);
     });
 };
@@ -39,4 +43,25 @@ function drawChartForCanvas(canvas) {
     }];
 
     var myDoughnut = new Chart(canvas.getContext("2d")).Doughnut(doughnutData);
+}
+
+function sendMail() {
+    document.getElementById('form').reset();
+    $.ajax({
+        url: "https://formspree.io/feignfroggie@gmail.com",
+        method: "POST",
+        data: {
+            name: "Tirthankar",
+            message: "hello!",
+            _replyto: "tirthankar.bhattacharjee@gmail.com",
+            _subject: "Message from website"
+        },
+        dataType: "json",
+        success: function(response) {
+            console.log(response);
+        },
+        error: function(error) {
+            console.log(error);
+        }
+    });
 }
