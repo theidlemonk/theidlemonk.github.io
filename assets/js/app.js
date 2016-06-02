@@ -1,6 +1,7 @@
 $(function() {
 
     smoothScrollingInit();
+    chartInit();
 
 });
 
@@ -19,4 +20,23 @@ function smoothScrollingInit() {
             }
         }
     });
+};
+
+function chartInit() {
+    $('canvas').each(function(index,canvas) {
+        drawChartForCanvas(canvas);
+    });
+};
+
+function drawChartForCanvas(canvas) {
+    var coverage = parseInt(canvas.dataset.coverage);
+    var doughnutData = [{
+        value: coverage,
+        color: "#1abc9c"
+    }, {
+        value: 100 - coverage,
+        color: "#ecf0f1"
+    }];
+
+    var myDoughnut = new Chart(canvas.getContext("2d")).Doughnut(doughnutData);
 }

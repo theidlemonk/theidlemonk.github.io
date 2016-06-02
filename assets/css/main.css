@@ -180,6 +180,11 @@
      font-size: 20px;
      color: white;
  }
+ 
+ #headerwrap h2 i {
+     padding-right: 8px;
+     color: #1abc9c;
+ }
  /* Intnro Wrap */
  
  #intro {
@@ -235,8 +240,9 @@
      padding-right: 8px;
      color: #1abc9c;
  }
- #c > div > p:nth-child(1){
-  text-align: left;
+ 
+ #c > div > p:nth-child(1) {
+     text-align: left;
  }
  /* Copyright Wrap */
  
@@ -247,8 +253,7 @@
  }
  
  #c p {
-     color: white
-     display: block;
+     color: white display: block;
  }
  /* Global Values */
  
@@ -283,19 +288,18 @@
  textarea.form-control,
  .btn {
      /*border-radius: 0;*/
-    font-weight: 500;
+     font-weight: 500;
  }
-
- .btn-success{
-  background-color: #1abc9c;
+ 
+ .btn-success {
+     background-color: #1abc9c;
  }
-
- .form-group label{
-  font-weight: 300;
-  color: white;
-  font-size: 1em;
+ 
+ .form-group label {
+     font-weight: 300;
+     color: white;
+     font-size: 1em;
  }
-
  
  @media all and (max-width:568px) {
      #headerwrap h1 {
