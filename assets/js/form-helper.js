@@ -5,7 +5,7 @@ var form = {
         _this.addSerializeObjectToJquery();
         $(form).validator().on('submit', function(e) {
             if (e.isDefaultPrevented()) {
-                toastr.success('Thank you. I will get back to you as soon as I can.');
+                // possible toastr warning
             } else {
                 _this.sendMail(form.serializeObject());
                 e.preventDefault();
@@ -30,27 +30,28 @@ var form = {
         };
     },
     sendMail: function(formDetails) {
-        console.log(formDetails);
         document.getElementById('form').reset();
-
-        alert("sending mail");
-        // $.ajax({
-        //     url: "https://formspree.io/feignfroggie@gmail.com",
-        //     method: "POST",
-        //     data: {
-        //         name: "Tirthankar",
-        //         message: "hello!",
-        //         _replyto: "tirthankar.bhattacharjee@gmail.com",
-        //         _subject: "Message from website"
-        //     },
-        //     dataType: "json",
-        //     success: function(response) {
-        //         toastr.success('Thank you. I will get back to you as soon as I can.');
-        //     },
-        //     error: function(error) {
-        //         toastr.error('Something bad happened :( Please email me directly.');
-        //     }
-        // });
+        var _this = this;
+        $.ajax({
+            url: _this.getUrl,
+            method: "POST",
+            data: {
+                name: formDetails.name,
+                message: formDetails.message,
+                _replyto: formDetails.email,
+                _subject: "Message from website form submission - theidlemonk.github.io"
+            },
+            dataType: "json",
+            success: function(response) {
+                toastr.success('Thank you. I will get back to you as soon as I can.');
+            },
+            error: function(error) {
+                toastr.error('Something bad happened :( Please email me directly.');
+            }
+        });
+    },
+    getUrl: function () {
+        return atob("aHR0cHM6Ly9mb3Jtc3ByZWUuaW8vZmVpZ25mcm9nZ2llQGdtYWlsLmNvbQ==");
     }
 };
 
