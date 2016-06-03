@@ -186,7 +186,7 @@
      color: #1abc9c;
  }
 
- #headerwrap h2 i:hover,:active {
+ #headerwrap h2 i:hover,#headerwrap h2 i:active {
      padding-right: 8px;
      color: #ffffff;
  }
@@ -296,7 +296,7 @@
      font-weight: 500;
  }
  
- .btn-success {
+ .btn-success  {
      background-color: #1abc9c;
  }
  
