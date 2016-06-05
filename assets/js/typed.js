@@ -254,7 +254,7 @@
                     // else{
                     //  self.stopNum = 0;
                     // }
-                    if (self.arrayPos == 2) { $('#headerwrap .need-to-hide').fadeOut("slow"); }
+                    if (self.arrayPos == 2) { $('#headerwrap .need-to-hide').fadeOut("fast"); }
 
                     if (self.contentType === 'html') {
                         // skip over html tags while backspacing
