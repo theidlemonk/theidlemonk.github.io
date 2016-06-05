@@ -33,7 +33,7 @@ var form = {
         document.getElementById('form').reset();
         var _this = this;
         $.ajax({
-            url: _this.getUrl,
+            url: _this.getUrl(),
             method: "POST",
             data: {
                 name: formDetails.name,
@@ -46,9 +46,10 @@ var form = {
                 toastr.success('Thank you. I will get back to you as soon as I can.');
             },
             error: function(error) {
-                toastr.error('Something bad happened :( Please email me directly.');
+                toastr.error('Something bad happened :( \n Please email me directly.');
             }
         });
+               // toastr.error('Something bad happened :( \n Please email me directly.');
     },
     getUrl: function () {
         return atob("aHR0cHM6Ly9mb3Jtc3ByZWUuaW8vZmVpZ25mcm9nZ2llQGdtYWlsLmNvbQ==");
