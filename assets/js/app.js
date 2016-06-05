@@ -1,9 +1,10 @@
 $(function() {
-
+    var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
     smoothScrollingInit();
+    typedHeaderInit();
     chartInit();
     form.initialize($("#form"));
-    toastr.options.positionClass = "toast-bottom-center";
+    toastr.options.positionClass = "toast-top-center";
     toastr.options.showMethod = 'slideDown';
 
 });
@@ -24,6 +25,22 @@ function smoothScrollingInit() {
         }
     });
 };
+
+function typedHeaderInit() {
+    $("#headername").typed({
+        strings: ["Web Developer", "Ninjaneer", "Pizza Lover", "Tirthankar Bhattacharjee"],
+        typeSpeed: 0,
+        preStringTyped: function() {
+            $('#headerwrap h3').hide();
+            $('#headerwrap h2').hide();
+        },
+        callback: function() {
+            $('#headerwrap h3').fadeIn("slow");
+            $('#headerwrap h2').fadeIn("slow");
+
+        }
+    });
+}
 
 function chartInit() {
     $('canvas').each(function(index, canvas) {

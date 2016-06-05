@@ -331,7 +331,7 @@
  }
  
  #toast-container > .toast-error:before {
-     content: "\f057";
+     content: "\f071";
  }
  
  #toast-container > .toast-success {
@@ -348,5 +348,71 @@
      #headerwrap h1 {
          font-size: 40px;
          color: white;
+     }
+ }
+ 
+ .typed-cursor {
+     opacity: 1;
+     -webkit-animation: blink 0.7s infinite;
+     -moz-animation: blink 0.7s infinite;
+     animation: blink 0.7s infinite;
+ }
+ 
+ @keyframes blink {
+     0% {
+         opacity: 1;
+     }
+     50% {
+         opacity: 0;
+     }
+     100% {
+         opacity: 1;
+     }
+ }
+ 
+ @-webkit-keyframes blink {
+     0% {
+         opacity: 1;
+     }
+     50% {
+         opacity: 0;
+     }
+     100% {
+         opacity: 1;
+     }
+ }
+ 
+ @-moz-keyframes blink {
+     0% {
+         opacity: 1;
+     }
+     50% {
+         opacity: 0;
+     }
+     100% {
+         opacity: 1;
+     }
+ }
+ 
+ .toast-top-center {
+     top: 10%;
+     width: 100%;
+ }
+ 
+ @media all and (max-width: 240px) {
+     .toast-top-center {
+         top: 10%;
+     }
+ }
+ 
+ @media all and (min-width: 241px) and (max-width: 320px) {
+     .toast-top-center {
+         top: 10%;
+     }
+ }
+ 
+ @media all and (min-width: 321px) and (max-width: 480px) {
+     .toast-top-center {
+         top: 10%;
      }
  }
