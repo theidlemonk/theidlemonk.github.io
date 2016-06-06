@@ -37,6 +37,7 @@ function typedHeaderInit() {
         callback: function() {
             $('#headerwrap h3').fadeIn("slow");
             $('#headerwrap h2').fadeIn("slow");
+            $('.typed-cursor').remove();
 
         }
     });
