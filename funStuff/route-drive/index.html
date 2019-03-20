@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Route</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        div,footer{
+        margin: 1vw;
+      }
+      .hide{
+        display: none;
+      }
+      #full-copy{
+        display: none;
+      }
+    </style>
+</head>
+
+<body class="container-fluid">
+    <div class="form">
+        <h1>Planner </h1>
+        <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action" data-address="6425 E LIVINGSTON AVE, REYNOLDSBURG, OH, 43068-3560" data-name="PETLOVERS">PETLOVERS</a>
+            <a href="#" class="list-group-item list-group-item-action" data-address="6724 E MAIN ST, REYNOLDSBURG, OH, 43068-2248" data-name="ROSEHILL VC">ROSEHILL VC</a>
+            <a href="#" class="list-group-item list-group-item-action" data-address="7775 E MAIN ST, REYNOLDSBURG, OH, 43068-1213" data-name="AC OF REYNOLDSBURG">AC OF REYNOLDSBURG</a>
+            <a href="#" class="list-group-item list-group-item-action" data-address="7295 E MAIN ST, REYNOLDSBURG, OH, 43068-2105" data-name="REYNOLDSBURG AH">REYNOLDSBURG AH</a>
+            <a href="#" class="list-group-item list-group-item-action" data-address="14277 NATIONAL RD, REYNOLDSBURG, OH, 43068" data-name="HILLVIEW VET SERVICES">HILLVIEW VET SERVICES</a>
+            <a href="#" class="list-group-item list-group-item-action" data-address="4200 Walnut Rd, Buckeye Lake, OH, 43008" data-name="PETPLEX ANIMAL HOSPITAL">PETPLEX ANIMAL HOSPITAL</a>
+            <a href="#" class="list-group-item list-group-item-action" data-address="116 N 9th st, Hebron, OH 43025" data-name="REFUGEE CANYON VETERINARY SERVICES">REFUGEE CANYON VETERINARY SERVICES</a>
+            <a href="#" class="list-group-item list-group-item-action" data-address="1176 HEBRON RD, HEATH, OH, 43056" data-name="UNDERWOOD ANIMAL HOSPITAL">UNDERWOOD ANIMAL HOSPITAL</a>
+            <a href="#" class="list-group-item list-group-item-action" data-address="155 MCMILLEN DR, NEWARK, OH, 43055" data-name="NEWARK VETERINARY HOSPITAL">NEWARK VETERINARY HOSPITAL</a>
+            <a href="#" class="list-group-item list-group-item-action" data-address="1200 1ST ST, NEWARK, OH, 43055" data-name="TWENTY FIRST STREET VET CLINIC">TWENTY FIRST STREET VET CLINIC</a>
+            <a href="#" class="list-group-item list-group-item-action" data-address="195 NORTHTOWNE CT, NEWARK, OH, 43055" data-name="NORTHTOWNE ANIMAL CLINIC">NORTHTOWNE ANIMAL CLINIC</a>
+            <a href="#" class="list-group-item list-group-item-action" data-address="2014 MT VERNON RD, NEWARK, OH, 43055" data-name="COLD SPRING ANIMAL CLINIC">COLD SPRING ANIMAL CLINIC</a>
+            <a href="#" class="list-group-item list-group-item-action" data-address="216 S MAIN ST, GRANVILLE, OH, 43023" data-name="GRANVILLE VETERINARY CLINIC">GRANVILLE VETERINARY CLINIC</a>
+            <a href="#" class="list-group-item list-group-item-action" data-address="1764 COLUMBUS RD, GRANVILLE, OH, 43023" data-name="THE ANIMAL CARE CENTER AT GRANVILLE">THE ANIMAL CARE CENTER AT GRANVILLE</a>
+            <a href="#" class="list-group-item list-group-item-action" data-address="65 S MAIN ST, PATASKALA, OH, 43062" data-name="ANIMAL HOSPITAL OF PATASKALA">ANIMAL HOSPITAL OF PATASKALA</a>
+            <a href="#" class="list-group-item list-group-item-action" data-address="4159 HAZELTON ETNA RD SW, PATASKALA, OH, 43062" data-name="VILLAGE VETERINARY CARE">VILLAGE VETERINARY CARE</a>
+            <a href="#" class="list-group-item list-group-item-action" data-address="615 Reynoldsburg New Albany Rd, Blacklick, OH, 43004" data-name="WHOLE PET WELLNESS CENTER">WHOLE PET WELLNESS CENTER</a>
+            <a href="#" class="list-group-item list-group-item-action" data-address="3033 REYNOLDSBURG NEW ALBAN RD, NEW ALBANY, OH, 43054" data-name="DONNA VIOLET/NEW ALBANY">DONNA VIOLET/NEW ALBANY</a>
+            <a href="#" class="list-group-item list-group-item-action" data-address="295 LANCASTER AVE, REYNOLDSBURG, OH, 43068" data-name="INDIAN CREEK VETERINARY HOSPITAL">INDIAN CREEK VETERINARY HOSPITAL</a>
+            <a href="#" class="list-group-item list-group-item-action" data-address="5891 ZARLEY ST, NEW ALBANY, OH, 43054-9754" data-name="WILLOW WOOD ANIMAL HOSPITAL">WILLOW WOOD ANIMAL HOSPITAL</a>
+            <a href="#" class="list-group-item list-group-item-action" data-address="815 W COSHOCTON ST, JOHNSTOWN, OH, 43031" data-name="JOHNSTOWN ANIMAL HOSPITAL">JOHNSTOWN ANIMAL HOSPITAL</a>
+            <a href="#" class="list-group-item list-group-item-action" data-address="731 W Coshocton St, Johnstown, OH, 43031" data-name="HAPPY TAILS VETERINARY">HAPPY TAILS VETERINARY</a>
+            <a href="#" class="list-group-item list-group-item-action" data-address="5061 MORSE RD, GAHANNA, OH, 43230-6850" data-name="DOGS ONLY MEDICAL CENTER">DOGS ONLY MEDICAL CENTER</a>
+            <a href="#" class="list-group-item list-group-item-action" data-address="610 MORRISON RD, COLUMBUS, OH, 43230" data-name="ANIMAL MEDICAL CENTER">ANIMAL MEDICAL CENTER</a>
+            <a href="#" class="list-group-item list-group-item-action" data-address="144 W JOHNSTOWN RD, COLUMBUS, OH, 43230-2773" data-name="GAHANNA ANIMAL HOSP">GAHANNA ANIMAL HOSP</a>
+            <a href="#" class="list-group-item list-group-item-action" data-address="1353 CHERRY WAY DR, COLUMBUS, OH, 43230-6775" data-name="ACC CHERRY WAY">ACC CHERRY WAY</a>
+            <a href="#" class="list-group-item list-group-item-action" data-address="6353 N Hamilton Rd, Westerville, OH, 43081" data-name="CEDAR HILL ANIMAL CLINIC">CEDAR HILL ANIMAL CLINIC</a>
+            <a href="#" class="list-group-item list-group-item-action" data-address="350 E Wilson Bridge Rd, Columbus, OH, 43085" data-name="HANDOFF - IDEXX LABS">HANDOFF - IDEXX LABS</a>
+        </div>
+        <div>
+            <a href="#" class="btn btn-success" id="process">Process</a>
+            <button type="button" class="btn btn-secondary" onclick="location.reload();">Reset</button>
+        </div>
+    </div>
+    <div class="result hide">
+      <a href="#" class="btn btn-info" id="go-back">Back</a>
+      <a href="https://www.mapquest.com/routeplanner/copy-paste" class="btn btn-warning">MapQuest</a>
+      <a href="#" id="copy" class="btn btn-info">copy</a>
+      <div id="for-display"></div>
+      <div id="full-copy"></div>
+      <a href="#" class="btn btn-info" id="go-back">Back</a>
+      <a href="https://www.mapquest.com/routeplanner/copy-paste" class="btn btn-warning">MapQuest</a>
+      <a href="#" id="copy" class="btn btn-info">copy</a>
+    </div>
+    <footer>
+        <br>
+        <h4 class="text-center text-muted">Powered by Awesomeness</h4>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="route.js"></script>
+</body>
+
+</html>
+<!-- <div class="list-group">
+  <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+  <a href="#" class="list-group-item list-group-item-action active">Dapibus ac facilisis in</a>
+  <a href="#" class="list-group-item list-group-item-action list-group-item-primary">A simple primary list group item</a>
+  <a href="#" class="list-group-item list-group-item-action list-group-item-primary active">A simple primary list group item</a>
+  <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">A simple secondary list group item</a>
+  <a href="#" class="list-group-item list-group-item-action list-group-item-secondary active">A simple secondary list group item</a>
+  <a href="#" class="list-group-item list-group-item-action list-group-item-success">A simple success list group item</a>
+  <a href="#" class="list-group-item list-group-item-action list-group-item-success active">A simple success list group item</a>
+  <a href="#" class="list-group-item list-group-item-action list-group-item-danger">A simple danger list group item</a>
+  <a href="#" class="list-group-item list-group-item-action list-group-item-danger active">A simple danger list group item</a>
+  <a href="#" class="list-group-item list-group-item-action list-group-item-warning">A simple warning list group item</a>
+  <a href="#" class="list-group-item list-group-item-action list-group-item-warning active">A simple warning list group item</a>
+  <a href="#" class="list-group-item list-group-item-action list-group-item-info">A simple info list group item</a>
+  <a href="#" class="list-group-item list-group-item-action list-group-item-info active">A simple info list group item</a>
+  <a href="#" class="list-group-item list-group-item-action list-group-item-light">A simple light list group item</a>
+  <a href="#" class="list-group-item list-group-item-action list-group-item-light active">A simple light list group item</a>
+  <a href="#" class="list-group-item list-group-item-action list-group-item-dark">A simple dark list group item</a>
+  <a href="#" class="list-group-item list-group-item-action list-group-item-dark active">A simple dark list group item</a>
+</div> -->
