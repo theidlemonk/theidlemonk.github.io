@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+  <title>css design</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheets.css">
+</head>
+<body>
+  <div id="banner-container">
+    <div id="banner-text">Idle Musings</div> 
+  </div>
+  <div class="container">
+    <main>
+      <h1><em>Class's</em> and <em>IDs</em> - CSS Tips</h1> 
+      <h2 class="left">Sharing my <img src="https://twemoji.maxcdn.com/36x36/1f4a1.png"> moment about classes and IDs.</h2>
+      <h4 class="right">Sunday, 4 January 2015</h4>
+      <hr>
+      <section>
+        <aside>
+          <a href="http://theidlemonk.github.io/blog/index.html" class="btn">Back to Blog Home</a>
+        </aside>
+        <img class="right" src="https://merrilanil.files.wordpress.com/2014/04/curious-minion-icon.png?w=620">
+        <p>
+          A <em>Class</em> and an <em>id</em> in an HTML tag are basically pointers or hooks to that tag. Now, the usual understanding is they are both related to the styling of the website; so related to the <em>css</em>. When I started using them (just to make them work), I would randomly add a <em>Class</em> or an <em>id</em> to identify a particular element of my HTML that I plan to style in a particular way. It did work for what I was trying to do, but it didn't do a whole lot a good. So code wise, it was cluttered, a <em>Class</em> or an <em>id</em> for every little element on the page.  
+        </p>
+
+        <h4>So how are we to use these hooks!!!</h4>
+        <p>
+          I had the same question for a while and an attitude like Mr. Stuart Minion as seen here. Lets clear the air a bit first. These hooks are primarily on the html side. These are to point at particular elements on the page. So css does not care if its a <em>Class</em> or an <em>id</em>, as long it finds the element to style. In simpler words, <em>Class's</em> and <em>ids</em> are not just for css.
+        </p>
+        <p>
+          A <em>Class</em> is used when we want to identify multiple of elements on the page for the same style. Whereas an <em>id</em> is used to pin point one unique element on the page.
+        </p>
+
+        <h4> Lets look at some examples.</h4>
+        <h5 id="class-example">Class Example</h5>
+        <p>If we have a button with type 'submit' or a type 'button' and we would want them both to be blue, we would use a <em>Class</em>. There are three different types of declarations for a button having the same <em>'.btn'</em> class associated. So they all get styled the same exact way.
+        </p>
+
+        <img class="screenshot" alt="Class example" src="../assets/Class-example.png">
+
+        <h5>ID Example</h5>
+        <p>Now in the same example above, say we had to point out the submit button specifically to style it differently. This way we can make it stand out as a form submission button. An id is added to that button declaration. Also in the css a specific style is added to the id as well for it to stand out.
+        </p>
+
+        <img class="screenshot" alt="Class example" src="../assets/id-example.png">
+        
+        <h4 >Conclusions</h4>
+        <p>
+          A class is used for grouping similar things. An id is used for identifying unique things.
+        </p>
+
+        <p>
+          <em>Now here's the 'AHA' moment.</em><br>
+          The id hook being unique, can also be used to direct a user to a particular part of a page. So if an id hook is used in the url, the browser specifically looks for that hook on the page and scrolls to it automatically. I know, cool right!!! <br>
+          So for example, in this particular blog page I have added an id to the <em>Class Example</em> heading that we just scrolled through to get here. So an url like <em>'http://theidlemonk.github.io/blog/t2-css-design.html#class-example'</em> will take you to the this page and then scroll to the part of the page that has this id (class-example). <br><a href="http://theidlemonk.github.io/blog/t2-css-design.html#class-example">Click here to try it.</a>        
+        </p>
+        <p class="emptyParagraph"></p>
+
+      </section>
+    </main>
+    <div id="footer">
+      <p class="left" >My <a class="fancy" href="https://github.com/theidlemonk">Github</a> </p>
+      <p class="right"> &copy; theidlemonk</p>
+    </div>
+  </div>
+
+</body>
+

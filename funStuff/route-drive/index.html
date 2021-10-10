@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Route</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        div,footer{
+        margin: 1vw;
+      }
+      .hide{
+        display: none;
+      }
+      #full-copy{
+        display: none;
+      }
+    </style>
+</head>
+
+<body class="container-fluid">
+    <div class="form">
+        <h1>Planner </h1>
+        <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action" data-address="1100 EASTERN AVE, CHILLICOTHE, OH, 45601" data-name="CHILLICOTHE ANIMAL CLINIC">CHILLICOTHE ANIMAL CLINIC</a>
+            <a href="#" class="list-group-item list-group-item-action" data-address="1008 E MAIN ST, CHILLICOTHE, OH, 45601" data-name="TOWN AND COUNTRY ANIMAL CLINIC">TOWN AND COUNTRY ANIMAL CLINIC</a>
+            <a href="#" class="list-group-item list-group-item-action" data-address="1246 WESTERN AVE CHILLICOTHE, OH, 45601" data-name="THE ANIMAL CARE CLINIC OF CHILLICO">THE ANIMAL CARE CLINIC OF CHILLICO</a>
+            <a href="#" class="list-group-item list-group-item-action" data-address="2260 ANDERSON STATION RD, CHILLICOTHE, OH, 45601" data-name="NORTH FORK ANIMAL HOSPITAL">NORTH FORK ANIMAL HOSPITAL</a>
+            <a href="#" class="list-group-item list-group-item-action" data-address="785 E MAIN ST, COLUMBUS, OH, 43205" data-name="CARE PET CLINIC">CARE PET CLINIC</a>
+            <a href="#" class="list-group-item list-group-item-action" data-address="391 MARIETTA RD, CHILLICOTHE, OH, 45601" data-name="THARP ANIMAL HEALTH CARE CENTER">THARP ANIMAL HEALTH CARE CENTER</a>
+            <a href="#" class="list-group-item list-group-item-action" data-address="1044 US RTE 22 W, CIRCLEVILLE, OH, 43113" data-name="CANALS EDGE VETERINARY CLINIC">CANALS EDGE VETERINARY CLINIC</a>
+            <a href="#" class="list-group-item list-group-item-action" data-address="1250 N High St, Columbus, OH, 43201" data-name="ELEMENTAL VET CENTER & PET SPA">ELEMENTAL VET CENTER & PET SPA</a>
+            <a href="#" class="list-group-item list-group-item-action" data-address="239 CHITTENDEN AVE, COLUMBUS, OH, 43201" data-name="CHITTENDEN VC">CHITTENDEN VC</a>
+            <a href="#" class="list-group-item list-group-item-action" data-address="1461 GERRARD AVE, COLUMBUS, OH, 43212" data-name="RIPLEY AH">RIPLEY AH</a>
+            <a href="#" class="list-group-item list-group-item-action" data-address="1109 W 5TH AVE, COLUMBUS, OH, 43212" data-name="5TH AND KENNY AH">5TH AND KENNY AH</a>
+            <a href="#" class="list-group-item list-group-item-action" data-address="1158 W 3RD AVE, COLUMBUS, OH, 43212" data-name="VILLAGE GATE ANIMAL HOSPITAL">VILLAGE GATE ANIMAL HOSPITAL</a>
+            <a href="#" class="list-group-item list-group-item-action" data-address="1117 W 1ST AVE, COLUMBUS, OH, 43212" data-name="HEALTH & HARMONY ANIMAL HOSPITAL">HEALTH & HARMONY ANIMAL HOSPITAL</a>
+            <a href="#" class="list-group-item list-group-item-action" data-address="1609 Northwest Blvd, Columbus, OH, 43212" data-name="PURRFECT CARE FELINE MEDICAL CENTER">PURRFECT CARE FELINE MEDICAL CENTER</a>
+            <a href="#" class="list-group-item list-group-item-action" data-address="1600 W 5TH AVE, COLUMBUS, OH, 43212" data-name="NORTHSTAR-ANIMAL CLINIC (APPLE VET HOSP)">NORTHSTAR-ANIMAL CLINIC (APPLE VET HOSP)</a>
+            <a href="#" class="list-group-item list-group-item-action" data-address="2447 N STAR RD, COLUMBUS, OH, 43221" data-name="UPPER ARLINGTON VETERINARY HOSPITAL">UPPER ARLINGTON VETERINARY HOSPITAL</a>
+            <a href="#" class="list-group-item list-group-item-action" data-address="3040 RIVERSIDE DR, COLUMBUS, OH, 43221" data-name="CITY PAWS HOME HEALTH">CITY PAWS HOME HEALTH</a>
+            <a href="#" class="list-group-item list-group-item-action" data-address="3416 RIVERSIDE DR, COLUMBUS, OH, 43221" data-name="CATS ONLY">CATS ONLY</a>
+            <a href="#" class="list-group-item list-group-item-action" data-address="2104 Zollinger Rd, Columbus, OH, 43221" data-name="LISA BULLOCK, DVM">LISA BULLOCK, DVM</a>
+            <a href="#" class="list-group-item list-group-item-action" data-address="3045 N HIGH ST, COLUMBUS, OH, 43202" data-name="CLINTONVILLE ANIMAL HOSPITAL">CLINTONVILLE ANIMAL HOSPITAL</a>
+            <a href="#" class="list-group-item list-group-item-action" data-address="3712 N HIGH ST, COLUMBUS, OH, 43214" data-name="GLENCOE ANIMAL HOSPITAL">GLENCOE ANIMAL HOSPITAL</a>
+            <a href="#" class="list-group-item list-group-item-action" data-address="596 OAKLAND PARK AVE, COLUMBUS, OH, 43214" data-name="KNAPP VH">KNAPP VH</a>
+            <a href="#" class="list-group-item list-group-item-action" data-address="1360 OAKLAND PARK AVE, COLUMBUS, OH, 43224" data-name="OAKLAND PARK VC">OAKLAND PARK VC</a>
+            <a href="#" class="list-group-item list-group-item-action" data-address="741 WETMORE RD, COLUMBUS, OH, 43214" data-name="CAT WELFARE ASSOC. INC">CAT WELFARE ASSOC. INC</a>
+            <a href="#" class="list-group-item list-group-item-action" data-address="4590 INDIANOLA AVE, COLUMBUS, OH, 43214" data-name="BEECHWOLD AH">BEECHWOLD AH</a>
+            <a href="#" class="list-group-item list-group-item-action" data-address="5617 N HIGH ST, COLUMBUS, OH, 43085" data-name="THE VET CLINIC">THE VET CLINIC</a>
+            <a href="#" class="list-group-item list-group-item-action" data-address="5756 N HIGH ST, COLUMBUS, OH, 43085" data-name="NVA ANIMAL HOSPITAL OF WORTHINGTON">NVA ANIMAL HOSPITAL OF WORTHINGTON</a>
+            <a href="#" class="list-group-item list-group-item-action" data-address="350 E Wilson Bridge Rd, Columbus, OH, 43085" data-name="HANDOFF -IDEXX LABS WORTHINGTON OHIO">HANDOFF -IDEXX LABS WORTHINGTON OHIO</a>
+        </div>
+        <div>
+            <a href="#" class="btn btn-success" id="process">Process</a>
+            <button type="button" class="btn btn-secondary" onclick="location.reload();">Reset</button>
+        </div>
+    </div>
+    <div class="result hide">
+        <a href="#" class="btn btn-info" id="go-back">Back</a>
+        <a href="https://www.mapquest.com/routeplanner/copy-paste" class="btn btn-warning">MapQuest</a>
+        <a href="#" id="copy" class="btn btn-info">copy</a>
+        <div id="for-display"></div>
+        <div id="full-copy"></div>
+        <a href="#" class="btn btn-info" id="go-back">Back</a>
+        <a href="https://www.mapquest.com/routeplanner/copy-paste" class="btn btn-warning">MapQuest</a>
+        <a href="#" id="copy" class="btn btn-info">copy</a>
+    </div>
+    <footer>
+        <br>
+        <h4 class="text-center text-muted">Powered by Awesomeness</h4>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="route.js"></script>
+</body>
+
+</html>
+</div> -->

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<head>
+  <title>Arrays and Hashes in Ruby</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheets.css">
+</head>
+<body>
+  <div id="banner-container">
+    <div id="banner-text">Idle Musings</div> 
+  </div>
+  <div class="container">
+    <main>
+      <h1>Ruby Arrays and Hashes...&iquest;</h1>
+      <h2 class="left">My two cents on Arrays and Hashes in Ruby</h2>
+      <h4 class="right">Sunday, 11 January 2015</h4>
+      <hr>
+      <section>
+        <aside>
+          <a href="http://theidlemonk.github.io/blog/index.html" class="btn">Back to Blog Home</a>
+        </aside>
+        <p>
+          To put it in simple terms they are both a kind of Lists. An Array contains a list of stuff. A Hash also contains a list of stuff. The way they store the stuff in them is what makes them different.
+        </p>
+        <p>
+          Lets take an example to see the differences a little more clearly.<br>
+          Say we have a small media collection (The only 3 physical disks I own now) that we want to add to a list. A game, an audio cd and a movie.
+          </p> 
+          <p>For an array, we would do it like this.
+          <pre>
+          <code>
+&gt;&gt; media_collection_array = ["God Of War","Pantera - Mouth of War", "Trainspotting"]
+[
+    [0] "God Of War",
+    [1] "Pantera - Mouth of War",
+    [2] "Trainspotting"
+]
+</code>
+          </pre> So when we declare an array in <em>irb</em> called <em>media_collection_array</em> with the three disks in it. Ruby stores them in the array <em>media_collection_array</em> indexing them starting at zero. We can get the item stored in a particular index location by calling the array and passing the index number to it. So to get my movie I would have to call the array <em>media_collection_array</em> and pass in the index 2.
+          <pre>
+          <code>
+&gt;&gt; media_collection_array[2]
+"Trainspotting"
+          </code>
+          </pre>
+          </p>
+          
+          <p>For an hash, we would do it like this.
+          <pre>
+          <code>
+&gt;&gt; media_collection_hash = { "game" => "God Of War", "audio" => "Pantera - Mouth of War", "movie" => "Trainspotting"}
+{
+    "game" => "God Of War",
+    "audio" => "Pantera - Mouth of War",
+    "movie" => "Trainspotting"
+}
+</code>
+          </pre> See how ruby stores the hash <em>media_collection_hash</em>. The are actually tagged with the key I provided and the value for it. Another noticeable thing is also the brackets. An array by convention is always the square brackets where as for an hash its the curly. In this case, in order to get my movie, I would have to call the hash with my key "movie" in this case.
+          <pre>
+          <code>
+&gt;&gt; media_collection_hash["movie"]
+"Trainspotting" 
+          </code>
+          </pre>
+          </p>
+          <p>
+            The difference in them as I see it, they are both lists. Arrays stores them in an <em>indexed</em> order. Where as the hashes are stored in a <em>key,value</em> pair. But in case of hashes, ruby does want us to provide the key. So in my example i would rather have a hash to store them so I dont have to remember an index number in order to get my movie out. But did you notice something, when we called them to get the movie out, the parameter (index for array or key for hash) passed in was in a square bracket both times. Well, food for thought.
+          </p>
+          <p class="emptyParagraph"></p>
+        </section>
+      </main>
+      <div id="footer">
+        <p class="left" >My <a href="https://github.com/theidlemonk">Github</a> </p>
+        <p class="right"> &copy; theidlemonk</p>
+      </div>
+    </div>
+
+  </body>
+

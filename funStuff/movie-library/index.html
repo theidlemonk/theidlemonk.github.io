@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cinéma</title>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+    <meta charset="UTF-8">
+</head>
+
+<body ng-app="movieLib">
+    <nav>
+        <div class="nav-wrapper container">
+            <a ng-href="#/" class="brand-logo">Cinéma</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a ng-href="#/new">Add a Movie</a></li>
+      </ul>
+        </div>
+    </nav>
+
+    <!-- render view -->
+    <div ng-view class="container"></div>
+    <!-- end view -->
+
+    <div class="fixed-action-btn vertical click-to-toggle">
+        <a class="btn-floating btn-large red">
+            <i class="large mdi-navigation-menu"></i>
+        </a>
+        <ul>
+            <li><a class="btn-floating red" ng-href="#/"><i class="material-icons">home</i></a></li>
+            <!-- <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li> -->
+            <li><a ng-href="#/new" class="btn-floating light-green"><i class="material-icons">add</i></a></li>
+            <!-- <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li> -->
+        </ul>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-resource.min.js">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.min.js">
+    </script>
+    <script type="text/javascript" src="js/movie.js"></script>
+    <script type="text/javascript" src="myapp.js"></script>
+    <script type="text/javascript" src="controller.js"></script>
+    <script type="text/javascript" src="service.js"></script>
+</body>
+
+</html>

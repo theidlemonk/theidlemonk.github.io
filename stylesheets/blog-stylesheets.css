@@ -1,0 +1,134 @@
+html, body {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+#banner-container {
+    text-align: center;
+    background-image: url('../assets/bamboo-banner2.jpg');
+    /*background-image: url('http://s0.wp.com/wp-content/themes/pub/ambiru/images/header.png');*/
+    
+    display: table;
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+}
+#banner-text {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 50px;
+    color: white;
+}
+.container {
+    padding: 0px 30px;
+}
+main {
+    padding: 50px;
+    background-color: rgb(221, 223, 216);
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+hr {
+    clear: both;
+}
+.screenshot {
+    width: 100%;
+}
+.emphasize::first-letter {
+    font-size: 320%;
+}
+pre {
+    background-color: #1A1A1A;
+    color: #C13723;
+    padding: 0px 20px;
+    width: 80%;
+    font-weight: bold;
+    font-size: 120%;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+}
+#footer {
+    padding: 0px 20px;
+    height: 50px;
+    background-color: rgb(166, 166, 166);
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    width: inherit;
+}
+a.fancy {
+    padding-left: 10px;
+    color: red;
+    text-decoration: none;
+    transition-duration: 0.3s;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+}
+a.fancy:focus, a.fancy:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+}
+.btn {
+    background: rgb(36, 36, 36);
+    opacity: 0.5;
+    -webkit-border-radius: 6;
+    -o-border-radius: 6;
+    -ms-border-radius: 6;
+    -moz-border-radius: 6;
+    border-radius: 6px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+.btn:hover, .btn:focus {
+    background: rgb(36, 36, 36);
+    text-decoration: none;
+    opacity: 0.7;
+}
+aside {
+    /*float: left;*/
+    
+    right: 33px;
+    bottom: 60px;
+    position: fixed;
+    /*width: 100%;*/
+}
+.emptyParagraph {
+    height: 30px;
+}
+/*pastie.org custom*/
+
+.credit {
+    visibility: hidden
+}
+/*.textmate-source-numbers{
+	visibility: hidden
+}*/
+
+.allcode {
+    font-size: 80%;
+    word-wrap: break-word;
+    font-weight: bold;
+    background-color: black;
+}
