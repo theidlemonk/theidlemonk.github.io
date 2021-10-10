@@ -28,7 +28,7 @@ function smoothScrollingInit() {
 
 function typedHeaderInit() {
     $("#headername").typed({
-        strings: ["Web Developer", "Ninjaneer", "Pizza Lover","I'm ^1000", "Tirthankar Bhattacharjee"],
+        strings: ["Ninjaneer", "Musician", "TDD practitioner","I'm ^1000", "Tirthankar Bhattacharjee"],
         typeSpeed: 0,
         preStringTyped: function() {
             $('#headerwrap h3').hide();
